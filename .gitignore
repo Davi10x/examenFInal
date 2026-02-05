@@ -1,0 +1,31 @@
+# Node modules
+node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+build/
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Environment variables
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Angular
+.angular/
+front/front/.angular/
+
+# Ionic
+www/
+platforms/
+plugins/
+
+# TypeScript
+*.tsbuildinfo

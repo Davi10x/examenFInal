@@ -1,0 +1,54 @@
+.header-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+ion-item {
+  margin-bottom: 10px;
+  --padding-start: 0;
+  --inner-padding-end: 0;
+}
+
+ion-list {
+  ion-item {
+    --padding-start: 16px;
+    margin-bottom: 8px;
+    
+    ion-label {
+      h2 {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+      }
+
+      p {
+        margin: 4px 0;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+ion-chip {
+  font-weight: 600;
+}
+
+ion-modal {
+  ion-item {
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,40 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  padding: 20px;
+}
+
+ion-card {
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+ion-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+ion-card-subtitle {
+  text-align: center;
+  margin-top: 8px;
+}
+
+ion-item {
+  margin-bottom: 10px;
+  --padding-start: 0;
+  --inner-padding-end: 0;
+}
+
+ion-button {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.info-text {
+  font-size: 0.9em;
+  line-height: 1.6;
+}

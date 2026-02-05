@@ -1,0 +1,56 @@
+<ion-content class="ion-padding">
+  <div class="login-container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>📚 Sistema de Biblioteca</ion-card-title>
+        <ion-card-subtitle>Iniciar Sesión</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        <form (ngSubmit)="login()">
+          <ion-item>
+            <ion-input
+              label="Usuario SQL Server"
+              labelPlacement="floating"
+              type="text"
+              [(ngModel)]="credentials.username"
+              name="username"
+              required
+            ></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-input
+              label="Contraseña"
+              labelPlacement="floating"
+              type="password"
+              [(ngModel)]="credentials.password"
+              name="password"
+              required
+            ></ion-input>
+          </ion-item>
+
+          <ion-button 
+            expand="block" 
+            type="submit" 
+            class="ion-margin-top"
+            [disabled]="loading"
+          >
+            <ion-spinner *ngIf="loading" name="crescent"></ion-spinner>
+            <span *ngIf="!loading">Ingresar</span>
+          </ion-button>
+        </form>
+
+        <ion-text color="danger" *ngIf="errorMessage">
+          <p class="ion-text-center">{{ errorMessage }}</p>
+        </ion-text>
+
+        <ion-text color="medium" class="ion-margin-top">
+          <p class="ion-text-center info-text">
+            <strong>
+          </p>
+        </ion-text>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
